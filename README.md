@@ -37,6 +37,174 @@ Enter a company name → Get a complete AI strategy package:
 
 ---
 
+## Complete Beginner? Start Here
+
+<details>
+<summary><strong>Click here if you're new to coding or feeling intimidated</strong></summary>
+
+### Don't Panic! Here's What This Actually Does
+
+This tool is like having a consulting firm in a box. You type in a company name (like "Nike" or "your local bakery"), and it automatically:
+
+1. **Researches** the company using AI (like having a research assistant)
+2. **Writes** 15 professional strategy documents (like having a consultant)
+3. **Creates** PowerPoint presentations and Word docs (like having an analyst)
+
+**That's it.** You don't need to understand the code. You just need to run it.
+
+### What You Need (The Actual Requirements)
+
+| What | Why | How Long to Get |
+|------|-----|-----------------|
+| A computer | Windows, Mac, or Linux all work | You probably have this |
+| Python installed | The programming language this runs on | 5 minutes |
+| Two free API keys | To use Perplexity and Gemini AI | 10 minutes |
+| Claude Code (optional) | Makes everything 10x easier | 2 minutes |
+
+### The Absolute Easiest Way (Using Claude Code)
+
+If you have [Claude Code](https://claude.ai/code) installed, you literally just need to say:
+
+```
+Clone the repo at https://github.com/promptadvisers/ai-strategy-factory and help me set it up and run it
+```
+
+Claude Code will:
+- Download all the files
+- Install everything needed
+- Help you get API keys
+- Run the app for you
+
+**That's the whole process if you use Claude Code.**
+
+### Step-by-Step for Complete Beginners (Without Claude Code)
+
+#### Step 1: Install Python (5 minutes)
+
+**On Mac:**
+1. Open Terminal (search "Terminal" in Spotlight)
+2. Type: `python3 --version`
+3. If you see a version number, you're done!
+4. If not, go to [python.org/downloads](https://python.org/downloads) and download
+
+**On Windows:**
+1. Go to [python.org/downloads](https://python.org/downloads)
+2. Download and run the installer
+3. **IMPORTANT:** Check the box that says "Add Python to PATH"
+4. Click Install
+
+#### Step 2: Get Your API Keys (10 minutes)
+
+You need two free API keys:
+
+**Perplexity API Key:**
+1. Go to [perplexity.ai](https://perplexity.ai)
+2. Create an account (free)
+3. Go to Settings → API
+4. Click "Generate API Key"
+5. Copy it somewhere safe (looks like `pplx-abc123...`)
+
+**Gemini API Key:**
+1. Go to [aistudio.google.com/apikey](https://aistudio.google.com/apikey)
+2. Sign in with Google
+3. Click "Create API Key"
+4. Copy it somewhere safe (looks like `AIzaSy...`)
+
+#### Step 3: Download This Project (2 minutes)
+
+**Option A - Download ZIP (easiest):**
+1. Click the green "Code" button at the top of this page
+2. Click "Download ZIP"
+3. Unzip the folder somewhere you can find it (like Desktop)
+
+**Option B - Use Git:**
+```bash
+git clone https://github.com/promptadvisers/ai-strategy-factory.git
+```
+
+#### Step 4: Set Up the Project (3 minutes)
+
+1. Open Terminal (Mac) or Command Prompt (Windows)
+
+2. Navigate to the folder:
+   ```bash
+   cd Desktop/ai-strategy-factory   # or wherever you put it
+   ```
+
+3. Run the setup:
+   ```bash
+   python setup.py    # On Windows
+   python3 setup.py   # On Mac
+   ```
+
+4. Add your API keys:
+   - Open the `.env` file in any text editor
+   - Replace the placeholder text with your actual keys
+   - Save the file
+
+#### Step 5: Run It! (1 minute)
+
+```bash
+python -m strategy_factory.webapp    # Windows
+python3 -m strategy_factory.webapp   # Mac
+```
+
+Your browser will open to **http://localhost:8888**
+
+Type in any company name and click "Start Analysis"!
+
+### Example Commands to Give Claude Code
+
+Once you have the project set up, here are things you can ask Claude Code to do:
+
+```
+"Run an AI strategy analysis for Tesla"
+```
+
+```
+"Generate a comprehensive strategy report for my company [describe your company]"
+```
+
+```
+"Start the web interface so I can analyze multiple companies"
+```
+
+```
+"What companies have I already analyzed?"
+```
+
+```
+"Help me understand the ROI calculator output for Stripe"
+```
+
+### What If Something Goes Wrong?
+
+**"Python not found"**
+- Make sure Python is installed (Step 1)
+- On Windows, make sure you checked "Add Python to PATH" during install
+- Try restarting your terminal/command prompt
+
+**"API key error"**
+- Double-check your `.env` file has the right keys
+- Make sure there are no extra spaces
+- Make sure the keys are on their own lines
+
+**"Module not found"**
+- Run `pip install -r requirements.txt` again
+- Make sure you're in the right folder
+
+**Still stuck?**
+- Open an issue on GitHub
+- Or ask Claude Code: "I'm getting this error: [paste error]. Help me fix it."
+
+### You've Got This!
+
+Seriously, the hardest part is getting the API keys. Once those are set up, it's just clicking buttons. And if you have Claude Code, it can literally do all of this for you.
+
+</details>
+
+---
+
 ## Quick Start
 
 ### Option 1: Claude Code (Easiest)
@@ -51,7 +219,7 @@ Just say: "Clone and run the AI Strategy Factory for me"
 
 ```bash
 # Clone the repository
-git clone https://github.com/yourusername/ai-strategy-factory.git
+git clone https://github.com/promptadvisers/ai-strategy-factory.git
 cd ai-strategy-factory
 
 # Run the setup script (works on Windows, macOS, Linux)
@@ -199,7 +367,7 @@ Open **http://localhost:8888** and enter a company name!
 
 ```bash
 # 1. Clone the repository
-git clone https://github.com/yourusername/ai-strategy-factory.git
+git clone https://github.com/promptadvisers/ai-strategy-factory.git
 cd ai-strategy-factory
 
 # 2. Create virtual environment
